@@ -7,8 +7,9 @@ function Foo(bar) {
   this.bar = bar;
   this.baz = 'baz'; // default value
 }
+var method = Foo.prototype;
 // class methods
-Foo.prototype.fooBar = function() {
+method.fooBar = function() {
 
 };
 // export the class
