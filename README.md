@@ -1,6 +1,9 @@
 Under Node.js:
 
 ```
+
+// Ref: http://book.mixu.net/node/ch6.html
+
 // Constructor
 function Foo(bar) {
   // always initialize all instance properties
