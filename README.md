@@ -1,6 +1,6 @@
 Under Node.js:
 
-
+```
 > // Constructor
 > function Foo(bar) {
 >   // always initialize all instance properties
@@ -17,4 +17,5 @@ Under Node.js:
 > 
 > // constructor call
 > var object = new Foo('Hello');
+```
 
