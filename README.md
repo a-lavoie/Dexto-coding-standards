@@ -13,8 +13,11 @@ Foo.prototype.fooBar = function() {
 };
 // export the class
 module.exports = Foo;
+```
+
 Instantiating a class is simple:
 
+```
 // constructor call
 var object = new Foo('Hello');
 ```
