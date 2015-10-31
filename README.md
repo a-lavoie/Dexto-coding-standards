@@ -36,7 +36,7 @@ Grunt usage:
 
 
 
-![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/DrawingsOn.png)
+![alt tag](Dexto-coding-standards/docs/img/DrawingsOn.png)
 
 
 ## The second largest heading (an <h2> tag)
