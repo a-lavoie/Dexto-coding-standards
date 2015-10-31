@@ -34,9 +34,7 @@ var object = new Foo('Hello');
 
 Grunt usage:
 
-
-
-![alt tag](Dexto-coding-standards/docs/img/DrawingsOn.jpg)
+## Image
 ![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/DrawingsOn.jpg)
 
 
