@@ -2,9 +2,8 @@
 
 
 
-
+## Creating a class
 ```
-
 // Ref: http://book.mixu.net/node/ch6.html
 
 // Constructor
