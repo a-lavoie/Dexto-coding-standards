@@ -2,7 +2,9 @@
 
 
 
-## Creating a class
+## Activity: Coding
+
+### Creating a class
 ```
 // Ref: http://book.mixu.net/node/ch6.html
 
@@ -28,6 +30,13 @@ Instantiating a class is simple:
 var object = new Foo('Hello');
 ```
 
+## Activity: Testing
+
+Grunt usage:
+
+
+
+![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/DrawingsOn.png)
 
 
 ## The second largest heading (an <h2> tag)
