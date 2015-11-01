@@ -58,7 +58,7 @@ var object = new Animal('Hello');
 Grunt usage:
 
 ## Image
-![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/DrawingsOn.jpg)
+![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/DevProcess.jpg)
 
 
 ## The second largest heading (an <h2> tag)
