@@ -5,7 +5,7 @@ app.get('/', function (req, res) {
   res.send('Hello World!');  
 }); 
    
-app.get('/user', function(req, res){ 
+app.get('/user', function(req, res){  
   res.send(200, { name: 'tobi' });    
 });
     
