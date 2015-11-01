@@ -1,5 +1,5 @@
 start:
-	node --harmony lib/index.js
+	node --harmony index.js
 
 .PHONY: start
 
