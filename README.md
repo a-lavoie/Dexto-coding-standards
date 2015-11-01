@@ -1,7 +1,5 @@
 # In Node.js:
 
-
-
 ## Activity: Coding
 
 ### Creating a class
@@ -56,8 +54,7 @@ var object = new Animal('Hello');
 ## Activity: Testing
 
 Grunt usage:
-
-## Image
+## Development process
 ![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/DevProcess.jpg)
 
 
