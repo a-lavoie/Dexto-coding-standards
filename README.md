@@ -9,25 +9,48 @@
 // Ref: http://book.mixu.net/node/ch6.html
 
 // Constructor
-function Foo(bar) {
-  // always initialize all instance properties
+function Animal(bar) {
+  // Always initialize all instance properties
   this.bar = bar;
   this.baz = 'baz'; // default value
 }
-var method = Foo.prototype;
+
+var instance = Animal.prototype;
 // class methods
-method.fooBar = function() {
+instance.walk = function() {
 
 };
+
+// Constructor
+function Animals(bar) {
+  // Always initialize all instance properties
+  this.collection = [];
+}
+
+var collection = Animals.prototype;
+// class methods
+collection.add = function() {
+};
+
+collection.findById = function() {
+};
+
+collection.remove = function() {
+};
+
+
 // export the class
-module.exports = Foo;
+
+
+module.exports.instance = Animal;
+module.exports.collection = Animals;
 ```
 
 Instantiating a class is simple:
 
 ```
 // constructor call
-var object = new Foo('Hello');
+var object = new Animal('Hello');
 ```
 
 ## Activity: Testing
