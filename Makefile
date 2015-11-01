@@ -5,6 +5,6 @@ test-runner:
 	cd api && grunt
 
 
-.PHONY: start
+.PHONY: start test-runner
 
 
