@@ -54,6 +54,9 @@ var object = new Animal('Hello');
 ## Activity: Testing
 
 Grunt usage:
+## Setting the environment process
+![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/AmazonUsingRemoteServer.jpg)
+
 ## Development process
 ![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/DevProcess.jpg)
 
