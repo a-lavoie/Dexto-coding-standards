@@ -1,5 +1,8 @@
 start:
-	node index.js
+	node api && node index.js
+
+test-server: 
+	cd api && nodemon --debug --harmony index.js
 
 test-runner:
 	cd api && grunt

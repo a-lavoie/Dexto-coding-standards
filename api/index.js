@@ -1,12 +1,16 @@
 var express = require('express');
 var app = express();
-
+ 
 app.get('/', function (req, res) {
-  res.send('Hello World!');  
+  res.send('Hello World!');   
 });  
-   
-app.get('/user', function(req, res){  
+      
+app.get('/user', function(req, res){   
   res.send(200, { name: 'tobi' });    
+});
+    
+app.get('/ping', function(req, res){   
+  res.send(200, { msg: 'ok' });    
 });
     
 var server = app.listen(3000, function () {     

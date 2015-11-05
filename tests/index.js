@@ -1,32 +1,57 @@
 var request = require('supertest');
 var express = require('express');
 var assert = require('assert');
+var request = require('request');
 var http = require('http');
+ 
+var sessionToken = "";
+var httpRequest = { 
+    url: "http://" + "192.168.2.33" + "/path",
+    hostname: "192.168.2.33",
+    path: "/ping",
+    port: 3000,  
+    method: "GET",    
+    headers: {  
+       'Content-Type': 'application/json',
+       'Authorization': '...'     
+    }    
+}; 
+  
+console.log("Running on server " + httpRequest.hostname); 
+ 
+describe('GET /users', function(){
+   it('respond with json', function(done){
+      var req = request.get('http://localhost:3000/user', 
+         function(err, res, dat){ 
+            assert.equal(200, res.statusCode); 
+            done();
+      });
+   });
+});
 
-//var app = express();
 
-// mocha --debug-brk tests/index.js
-
-//app.get('/user', function(req, res){
-//  res.send(200, { name: 'tobi' }); 
-//});
-
-//request(app)
-//  .get('/user') 
-//  .expect('Content-Type', /json/)  
-//  .expect('Content-Length', '15')
-//  .expect(200)
-//  .end(function(err, res){
-//    if (err) throw err; 
-//  });
-
-  describe('GET /users', function(){
-     it('respond with json', function(done){
-        http.get('http://localhost:3000/user', function(res){ 
-           assert.equal(200, res.statusCode); 
-           done();
-        });
+describe('GET /ping', function(){  
+    it('respond ok', function(done){
+	httpRequest.path = "/ping";
+	httpRequest.method = "POST";
+        var url = 'http://' + httpRequest.hostname 
+            + ":" + httpRequest.port  
+            + httpRequest.path;
+        var req = request.get(url,
+	    function(error, res, body){
+		if (error){
+		    console.log(error);   
+		} else {
+                    assert.equal(200, res.statusCode);
+		    var o = JSON.parse(body);
+		}
+                done();
+	 });
     });
-  });
+});
+
+
+
+
 
 
