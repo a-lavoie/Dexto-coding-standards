@@ -3,10 +3,10 @@ var inHtml = false;
 function out(o)
 {
     if ( !inHtml ){
-       console.log(o);
+	console.log(o);
     } else {
-       var args = Array.prototype.slice.call(arguments, 0);
-       document.getElementById('output').innerHTML += args.join(" ") + "\n";
+	var args = Array.prototype.slice.call(arguments, 0);
+	document.getElementById('output').innerHTML += args.join(" ") + "\n";
     }
 }
 
@@ -37,3 +37,4 @@ out("Calling 2nd .next()")
 var valSecondYield = gen.next("2nd input");
 out("Control given back to caller, a value will be available");
 out("Value of first yield: '" + valSecondYield.value + "'");
+
