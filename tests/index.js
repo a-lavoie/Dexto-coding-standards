@@ -16,6 +16,11 @@ var httpRequest = {
        'Authorization': '...'     
     }    
 }; 
+
+
+var getUrl = function(){
+
+};
   
 console.log("Running on server " + httpRequest.hostname); 
  
@@ -28,7 +33,6 @@ describe('GET /users', function(){
       });
    });
 });
-
 
 describe('GET /ping', function(){  
     it('respond ok', function(done){
