@@ -25,7 +25,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-run');
-
   grunt.registerTask('default', ['watch:run_mocha_on_changes']);
 
 };

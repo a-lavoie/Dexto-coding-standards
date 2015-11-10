@@ -1,8 +1,11 @@
 start:
 	node api && node index.js
 
-test-server: 
-	cd api && nodemon --debug --harmony index.js
+test-express-server: 
+	cd api && nodemon --debug --harmony express-index.js
+
+test-koa-server: 
+	cd api && nodemon --debug --harmony lib/koa-index.js
 
 test-runner:
 	cd api && grunt
@@ -11,3 +14,4 @@ test-runner:
 .PHONY: start test-runner
 
 
+ 

@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/a-lavoie/Dexto-coding-standards/issues"
   },
-  "homepage": "https://github.com/a-lavoie/Dexto-coding-standards"
+  "homepage": "https://github.com/a-lavoie/Dexto-coding-standards",
+  "devDependencies": {
+    "grunt-run": "^0.5.2"
+  }
 }
