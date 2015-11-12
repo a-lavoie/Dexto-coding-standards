@@ -36,16 +36,7 @@ var getUrl = function(){
   
 console.log("Running on server " + httpRequest.hostname); 
  
-//describe('GET /users', function(){
-//   it('respond with json', function(done){
-//      var req = request.get('http://localhost:3000/user', 
-//         function(err, res, dat){ 
-//            assert.equal(200, res.statusCode); 
-//            done();
-//      });
-//   });
-//});
-//
+
 //describe('GET /ping', function(){  
 //    it('respond ok', function(done){
 //	httpRequest.path = "/ping";
