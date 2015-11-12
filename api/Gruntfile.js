@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     watch: {
 
       run_mocha_on_changes: {
-         files: ['../tests/index.js', '*.js'],
+         files: ['../tests/index.js', '**/*.js'],
          tasks: ['run:start_mocha_test'],
          options: {
             spawn: false

@@ -84,6 +84,81 @@ describe('GET /echo', function(){
     });
 });
 
+describe('POST /echo', function(){  
+    it('respond ok', function(done){
+        this.timeout(10000);
+	httpRequest.path = "/echo";
+	httpRequest.method = "POST";
+        var req = request.post(getUrl(), 
+	    function(error, res, body){
+		if (error){
+		    console.log(error);   
+		} else { 
+                    assert.equal(200, res.statusCode);
+		    var o = JSON.parse(body);
+		}
+                done();
+	 });
+    });
+});
+
+describe('PUT /echo', function(){  
+    it('respond ok', function(done){
+        this.timeout(10000);
+	httpRequest.path = "/echo";
+	httpRequest.method = "PUT";
+        var req = request.put(getUrl(), 
+	    function(error, res, body){
+		if (error){
+		    console.log(error);   
+		} else { 
+                    assert.equal(200, res.statusCode);
+		    var o = JSON.parse(body);
+		}
+                done();
+	 });
+    });
+});
+
+
+describe('PATCH /echo', function(){  
+    it('respond ok', function(done){
+        this.timeout(10000);
+	httpRequest.path = "/echo";
+	httpRequest.method = "PATCH";
+        var req = request.patch(getUrl(), 
+	    function(error, res, body){
+		if (error){
+		    console.log(error);   
+		} else { 
+                    assert.equal(200, res.statusCode);
+		    var o = JSON.parse(body);
+		}
+                done();
+	 });
+    });
+});
+
+describe('DELETE /echo', function(){  
+    it('respond ok', function(done){
+        this.timeout(10000);
+	httpRequest.path = "/echo";
+	httpRequest.method = "DELETE";
+        var req = request.del(getUrl(), 
+	    function(error, res, body){
+		if (error){
+		    console.log(error);   
+		} else { 
+                    assert.equal(200, res.statusCode);
+		    var o = JSON.parse(body);
+		}
+                done();
+	 });
+    });
+});
+
+
+
 
 
 

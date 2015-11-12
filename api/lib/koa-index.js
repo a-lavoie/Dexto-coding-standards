@@ -9,6 +9,10 @@ var main = function* () {
    var service = yield createService();
    var router = new Router();
    router.get('aname', '/echo', service.get);
+   router.post('aname', '/echo', service.post);
+   router.put('aname', '/echo', service.put);
+   router.patch('aname', '/echo', service.patch);
+   router.delete('aname', '/echo', service.delete);
 
    app.use(router.routes());
    app.listen(3000);
