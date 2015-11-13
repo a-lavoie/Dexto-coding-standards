@@ -60,6 +60,9 @@ Grunt usage:
 ## Development process
 ![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/DevProcess.jpg)
 
+## Koa Architecture
+![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/Architecture.jpg)
+
 
 ## The second largest heading (an <h2> tag)
 …
