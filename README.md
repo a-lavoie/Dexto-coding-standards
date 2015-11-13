@@ -60,7 +60,7 @@ Grunt usage:
 ## Development process
 ![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/DevProcess.jpg)
 
-## Koa Architecture
+## Customized architecture (based on Koa framework)
 ![alt tag](https://github.com/a-lavoie/Dexto-coding-standards/blob/master/docs/img/Architecture.jpg)
 
 
