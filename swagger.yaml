@@ -12,4 +12,38 @@ consumes:
 produces:
   - application/json
 paths:
+ /resource:
+   post:
+     tags:
+       - "PostResource"
+     description: "This endpoint's purpose is to ..."
+     operationId: "DoNotKnowWhy"
+     produces:
+       - "text"
+     parameters:
+       - name: body
+         in: body
+         required: true
+         schema:
+           type: object
+           properties:
+             name:
+               type: string
+             address:
+               type: string
+             phoneNumber:
+               type: string
+           required:
+             - name
+             - address
+     responses:
+       200:
+         description: "api response"
+       default:
+         description: "unexpected error"
+securityDefinitions:
+  internalApiKey:
+    type: apiKey
+    in: header
+    name: X-Mashape-Key
 
